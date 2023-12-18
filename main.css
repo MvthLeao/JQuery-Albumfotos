@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px 0;
+    display: flex;
+    background-color: rgb(83, 14, 132);
+    color: aliceblue;
+    border-bottom: 10px solid rgb(66, 31, 97);
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 10px;
+}
+
+form h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: rgb(66, 31, 97);
+    font-weight: 900;
+}
+
+form {
+    background-color: rgb(242, 221, 247);
+    padding: 24px;
+    text-align: center;
+    display: none;
+}
+
+input, button {
+    padding: 10px;
+}
+
+button {
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-cancel {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 33.33%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.link-img {
+    padding: 140px;
+    background-color: rgba(249, 249, 249, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.link-img a {
+    font-size: 20px;
+    color: rgb(65, 66, 66);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul li:hover .link-img {
+    opacity: 1;
+}
